@@ -120,7 +120,7 @@ def readHeader(infile, is_synapse):
     if version < 6:
         print("Version {0} no longer supported".format(str(version)))
         return -1
-    print('HiC version:' + '  {0}'.format(str(version)))
+    #print('HiC version:' + '  {0}'.format(str(version)))
     master = struct.unpack('<q',req.read(8))[0]
     genome = b""
     c=req.read(1)
